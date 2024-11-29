@@ -2,6 +2,7 @@
 import './App.css'
 import { Outlet } from 'react-router'
 import Aside from './component/Aside'
+import Nabvar from './component/Nabvar'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -10,7 +11,7 @@ function App() {
     <>
       <Aside/>
       <div className="main-content">
-        <nav>Navbar</nav>
+       <Nabvar></Nabvar>
         <section style={
           {scrollBehavior : "smoothScroll"}
         }>
