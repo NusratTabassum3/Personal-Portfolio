@@ -1,5 +1,6 @@
 import { FaBookReader } from "react-icons/fa";
 import TimelineItem from "./TimelineItem";
+import SkillItem from "./SkillItem";
 
 const Resume = () => {
     return (
@@ -49,6 +50,8 @@ const Resume = () => {
                 </ol>
             </div>
 
+            {/* Experience Section */}
+
             <div className="timeline">
                 <div className="title-wrapper">
                     <div className="icone-box">
@@ -60,6 +63,7 @@ const Resume = () => {
 
                 <ol className="timeline-list">
                    <TimelineItem
+                   
                    Institution="Solutya Pvt. Ltd."
                    Title="Designation : Software Engineer (Intern)"
                    Duration=" Duration : August 2024 to December 2024"
@@ -74,6 +78,19 @@ const Resume = () => {
                    
 
                 </ol>
+            </div>
+
+            {/* Skill Section  */}
+
+
+            <div className="skill">
+                <h3 className="h3 skills-title">My Skills</h3>
+                <ul className="skills-list content-card">
+                    <SkillItem title="Web Design" value={80}/>
+                    <SkillItem title="React" value={70}/>
+                    <SkillItem title="Javascript" value={90}/>
+                    <SkillItem title="Typescript" value={10}/>
+                </ul>
             </div>
             
         </section>
