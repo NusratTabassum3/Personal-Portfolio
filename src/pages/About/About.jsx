@@ -1,4 +1,27 @@
+import Service from "./Service";
 
+const servicesData = [
+    {
+        "title": "Web design",
+        "icon": "/images/icon-design.svg",
+        "description": "The most modern and high-quality design made at a professional level."
+      },
+      {
+        "title": "Web development",
+        "icon": "/images/icon-dev.svg",
+        "description": "High-quality development of sites at the professional level."
+      },
+      {
+        "title": "Mobile apps",
+        "icon": "/images/icon-app.svg",
+        "description": "Professional development of applications for iOS and Android."
+      },
+      {
+        "title": "Photography",
+        "icon": "/images/icon-photo.svg",
+        "description": "I make high-quality photos of any category at a professional level."
+      }
+]
 
 const About = () => {
     return (
@@ -22,6 +45,15 @@ const About = () => {
 
            <section className="service">
             <h2 className="h3 service-title">What I'm Doing</h2>
+            <ul className="service-list">
+                {
+                    servicesData.map((service,index) =>(
+                <Service key={index} title={service.title} icon={service.icon} description={service.description}/>
+                    ))
+                }
+            </ul>
+           
+           
            </section>
         </div>
     );
