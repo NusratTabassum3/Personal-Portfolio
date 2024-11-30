@@ -80,13 +80,52 @@ const servicesData = [
            <section className="testtimonials">
             <h3 className="h3 testimonials-title">Testimonials</h3>
             <ul className="testimonials-list has-scrollbar">
+              
               {
               testimonial.map((testimonial,index)=>(
-                <Testimonial key={index} name={testimonial.name} avatar={testimonial.avatar}testimonial ={testimonial.testimonial}/>
+                <Testimonial key={index} 
+                name={testimonial.name} 
+                avatar={testimonial.avatar}
+                 testimonial ={testimonial.testimonial}/>
 
               ))}
             </ul>
            </section>
+
+           {/* clients logo */}
+
+           <section className="clients">
+            <h3 className="h3 clients-title">Clients</h3>
+            <ul className="clients-list has-scrollbar">
+              <li className="clients-items">
+                <a href="#">
+                  <img src="/images/logo-1-color.png" alt=""/>
+                </a>
+              </li>
+              <li className="clients-items">
+                <a href="#">
+                  <img src="/images/logo-2-color.png" alt=""/>
+                </a>
+              </li>
+              <li className="clients-items">
+                <a href="#">
+                  <img src="/images/logo-3-color.png" alt=""/>
+                </a>
+              </li>
+              <li className="clients-items">
+                <a href="#">
+                  <img src="/images/logo-4-color.png" alt=""/>
+                </a>
+              </li>
+              <li className="clients-items">
+                <a href="#">
+                  <img src="/images/logo-5-color.png" alt=""/>
+                </a>
+              </li>
+            </ul>
+           </section>
+
+
         </div>
     );
 };
