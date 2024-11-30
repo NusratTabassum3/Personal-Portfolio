@@ -1,4 +1,7 @@
+import { useState } from "react";
 import Service from "./Service";
+import Testimonial from "./Testimonial";
+import { useEffect } from "react";
 
 const servicesData = [
     {
@@ -23,7 +26,23 @@ const servicesData = [
       }
 ]
 
-const About = () => {
+
+
+
+  const About = () => {
+    const[testimonial,setTestimonial] = useState([])
+  
+    useEffect(()=>{
+  
+    
+      fetch("testimonials.json")
+      .then(res=>res.json())
+      .then(data=> setTestimonial(data))
+  
+  
+    },[])
+  
+
     return (
         <div className="about active">
            <header>
@@ -54,6 +73,19 @@ const About = () => {
             </ul>
            
            
+           </section>
+
+           {/* Testtimonials section */}
+
+           <section className="testtimonials">
+            <h3 className="h3 testimonials-title">Testimonials</h3>
+            <ul className="testimonials-list has-scrollbar">
+              {
+              testimonial.map((testimonial,index)=>(
+                <Testimonial key={index} name={testimonial.name} avatar={testimonial.avatar}testimonial ={testimonial.testimonial}/>
+
+              ))}
+            </ul>
            </section>
         </div>
     );
