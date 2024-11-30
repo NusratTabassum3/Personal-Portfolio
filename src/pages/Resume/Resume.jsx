@@ -48,6 +48,33 @@ const Resume = () => {
 
                 </ol>
             </div>
+
+            <div className="timeline">
+                <div className="title-wrapper">
+                    <div className="icone-box">
+                        <FaBookReader/>
+                    </div>
+                    <h3 className="h3">Experience</h3>
+
+                </div>
+
+                <ol className="timeline-list">
+                   <TimelineItem
+                   Institution="Solutya Pvt. Ltd."
+                   Title="Designation : Software Engineer (Intern)"
+                   Duration=" Duration : August 2024 to December 2024"
+                   department=" Resposibility : Developed web frontends with HTML,CSS,Tailwind CSS and React.js 
+                                Built and optimized user-facing features and backend services"
+                   
+                   
+                   />
+
+                   
+                   
+                   
+
+                </ol>
+            </div>
             
         </section>
     );
