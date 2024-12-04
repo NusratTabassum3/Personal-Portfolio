@@ -8,6 +8,8 @@ import Resume from './pages/Resume/Resume.jsx'
 import{createBrowserRouter,RouterProvider} from "react-router-dom"
 import About from './pages/About/About.jsx'
 import Portfolio from './pages/Portfolio/Portfolio.jsx'
+import Blogs from './pages/Blogs/Blogs.jsx'
+import Contact from './pages/Contact/Contact.jsx'
 //npm i react-router-dom localforage match-sorter sort-by
 
 const router= createBrowserRouter([
@@ -27,6 +29,14 @@ const router= createBrowserRouter([
       {
         path : "/portfolio",
         element : <Portfolio/>
+      },
+      {
+        path : "/blogs",
+        element :<Blogs/>
+      },
+      {
+        path : "/contact",
+        element :<Contact/>
       }
     ]
   },
