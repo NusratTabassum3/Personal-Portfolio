@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
+import { FaRegEye } from "react-icons/fa";
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
@@ -58,7 +59,7 @@ const Portfolio = () => {
             <li
               key={project.id}
               className="project-item active"
-              data-filter={iteam}
+              data-filter-iteam
               data-category={project.category}
             >
               <a href="#">
@@ -66,7 +67,7 @@ const Portfolio = () => {
                   <div className="project-item-icon">
                     <FaRegEye />
                   </div>
-                  <img src={project.image} alt="" loadimg="lazy" />
+                  <img src={project.image} alt="" loading="lazy" />
                 </figure>
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-category">{project.category}</p>
