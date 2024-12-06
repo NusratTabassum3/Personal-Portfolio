@@ -3,9 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import React from 'react'
-import Resume from './pages/Resume/Resume.jsx'
+
 
 import{createBrowserRouter,RouterProvider} from "react-router-dom"
+import Resume from './pages/Resume/Resume.jsx'
 import About from './pages/About/About.jsx'
 import Portfolio from './pages/Portfolio/Portfolio.jsx'
 import Blogs from './pages/Blogs/Blogs.jsx'
