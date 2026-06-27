@@ -14,11 +14,11 @@ const Nabvar = () => {
             Resume
           </NavLink>
         </li>
-        <li className="navbar-item">
+        {/* <li className="navbar-item">
           <NavLink to="/portfolio" className="navbar-link">
             Portfolio
           </NavLink>
-        </li>
+        </li> */}
         {/* <li className="navbar-item">
                     <NavLink to="/blogs" className="navbar-link" >Blog</NavLink>
                 </li> */}
